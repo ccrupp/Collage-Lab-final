@@ -9,7 +9,7 @@
 import java.awt.*;
 import java.util.*;
 import java.util.List; // resolves problem with java.awt.List and java.util.List
-public class TestPicture17
+public class CollageTest
 {
 
     /**
@@ -40,21 +40,21 @@ public class TestPicture17
      Picture ferris3 = new Picture("images/2000 ferris wheel2.jpg");
      Picture wall = new Picture("images/wall.jpg");
      Picture wall2 = new Picture("images/wall.jpg");
-     
+
      ferris1.gray();
      ferris1.explore();
      ferris1.mirrorVertical();
      ferris1.explore();
      */
      Picture temple = new Picture("images/temple.jpg");
-     Picture mike = new Picture("images/Prisonmike.png");   
+     Picture mike = new Picture("images/Prisonmike.png");
      Picture mike2 = new Picture("images/Prisonmike.png");
      Picture mike3 = new Picture("images/Prisonmike.png");
      Picture mike4 = new Picture("images/Prisonmike.png");
      Picture mike5 = new Picture("images/Prisonmike.png");
      Picture mikedwight = new Picture("images/mikedwight.jpg");
      Picture canvas = new Picture("images/mycanvas.jpg");
-     
+
      mike.gray();
      canvas.copy(mike,0,0);
      canvas.copy(mike2,0,786);
@@ -68,7 +68,7 @@ public class TestPicture17
      canvas.copy(mikedwight,700,393);
      canvas.explore();
      canvas.write("images\\prisonmikedone.jpg");
-     
+
 /*
      //apic.explore();
      //ferris1.explore();//In order to see it, you need to explore it.
@@ -177,8 +177,8 @@ pixel_arr3 = ferris2.getPixels();
     //write/save a picture as a file
 //     /*
 //     ferris1.write("images/ferris11.jpg");
-// 
-// 
+//
+//
 // value = 0;
 // Pixel pixel_arr4[];
 // pixel_arr4 = wall.getPixels();
